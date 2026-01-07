@@ -23,6 +23,7 @@ const Sidebar = () => {
 			label: 'Settings',
 			pro: false
 		},
+
 	]
 
 	return (

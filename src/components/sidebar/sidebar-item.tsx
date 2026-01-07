@@ -3,7 +3,6 @@ import { cn } from "@/lib/utils";
 import { LucideIcon } from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
 
-
 interface SidebarItemProps {
 	item: {
 		icon: LucideIcon,
@@ -22,7 +21,7 @@ const SidebarItem = ({ item }: SidebarItemProps) => {
 	const pathname = usePathname()
 	return (
 		<div className={cn("")}>
-			<div onClick={() => onNavigation(item.href,item.pro)} className={cn("text-muted-foreground text-xs group w-full flex p-2 font-medium cursor-pointer justify-start  hover:bg-primary/10 rounded-lg transition", pathname === item.href && "bg-neutral-900")}>
+			<div onClick={() => onNavigation(item.href,item.pro)} className={cn("text-muted-foreground text-xs group w-full flex p-2 font-medium cursor-pointer justify-start  hover:bg-primary/10 rounded-lg transition", pathname === item.href && "bg-neutral-700")}>
 				<div className="flex flex-col gap-y-2 items-center  flex-1">
 					<item.icon className="size-4" />
 					<p>{item.label}</p>
