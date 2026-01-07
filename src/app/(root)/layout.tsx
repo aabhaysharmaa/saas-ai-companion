@@ -1,12 +1,21 @@
 import NavBar from '@/components/navbar'
-import React, { ReactNode } from 'react'
+import Sidebar from '@/components/sidebar'
+
+import { ReactNode } from 'react'
+
+
 
 const RootLayout = ({ children }: { children: ReactNode }) => {
+
+
 	return (
 		<div className='h-full'>
-			<NavBar/>
-			<main className='md:pl-20 pt-16 h-full'>
-			{children}
+			<NavBar />
+			<div className="hidden md:flex mt-16 w-18 flex-col fixed inset-y-0">
+				<Sidebar />
+			</div>
+			<main className='md:ml-18 pt-16 h-full'>
+				{children}
 			</main>
 		</div>
 	)
