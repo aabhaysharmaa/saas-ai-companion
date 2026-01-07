@@ -1,10 +1,11 @@
+import { UserButton } from '@clerk/nextjs'
 import React from 'react'
 
 const Home = () => {
   return (
-    <div className=''>
-      Root Page (Protected)
-    </div>
+    <main className=''>
+      <UserButton afterSignOutUrl='/' />
+    </main>
   )
 }
 
