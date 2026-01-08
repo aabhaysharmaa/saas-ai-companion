@@ -23,7 +23,6 @@ const Sidebar = () => {
 			label: 'Settings',
 			pro: false
 		},
-
 	]
 
 	return (
@@ -33,7 +32,7 @@ const Sidebar = () => {
 					{routes.map((item) => (
 						<SidebarItem
 							key={item.href}
-                          item={item}
+							item={item}
 						/>
 					))}
 				</div>

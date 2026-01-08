@@ -1,6 +1,6 @@
 import Categories from '@/components/categories';
 import SearchInput from '@/components/search-input';
-import {prisma} from "@/lib/prismadb" ;
+import {prisma} from "@/lib/prismadb";
 
 const Home = async() => {
   const categories =  await prisma.category.findMany();
